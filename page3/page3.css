@@ -43,14 +43,25 @@ body {
     padding-top: 64px;
 }
 
-.subtitulo {
-   padding-top: 60px;
-   padding-bottom: 24px;
-   font-family: 'Poppins', sans-serif;
-   font-weight: 400;
-   font-weight: bold;
-   color: white;
-}
+.subtitulo1 {
+    padding-top: 60px;
+    padding-bottom: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-weight: bold;
+    color: #993399;
+ 
+ }
+
+ .subtitulo {
+    padding-top: 60px;
+    padding-bottom: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-weight: bold;
+    color: white;
+ 
+ }
 
 .texto {
     padding-top: 60px;
