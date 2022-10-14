@@ -7,17 +7,25 @@
     <link rel="stylesheet" href="page6.css">
 </head>
 <body>
-    <img class="principal" src="imagem.jpg" alt="">
+    <img class="principal" src="imagem.jpeg" alt="">
     
     <div class="page5">
 
-        <h1 class="titulo">Git Cherry Pick</h1>
+        <h1 class="titulo">Git Merge</h1>
 
-        <h2 class="subtitulo">O que o git cherry faz?</h2>
+        <h2 class="subtitulo">Como podemos definir uma merge?</h2>
         <p class="texto">
-            Ele nos ajuda a recuperar algo que acabamos apagando, algo perdido.<br>
-            Então para fazer isso, eu tenho que chamar no meu terminal pelo: <strong>git reflogue</strong>, onde irá me mostrar as todas as ações que tinham sido feitas, sendo assim eu localizo qual eu quero e pego  o ID desse meu commit que eu tinha “perdido”  e chamo no terminal por: <strong>git cherry-pick e o número do ID</strong>
-            Assim que esse comando for feito, pronto!<br> Seu commit foi restaurado com sucesso :)
+            Antes de explicar o Git Merge, vamos primeiro entender sobre Branch.<br>
+            Pensemos que estamos fazendo um projeto com outro desenvolvedor, e no nosso projeto temos uma Branch principal, mas nós criamos outras duas Branchs, na qual podemos nomear como: teste1 e teste2.
+            Beleza, agora vamos lembrar que a nossa Branch principal sempre estará conectada com as outras branchs criadas. <br> Vamos dizer que eu preciso criar um novo arquivo para adicionar um botão e também alterei um outro arquivo.<br> Logo que eu faço todas essas alterações, eu preciso dar um commit e enviar essas alterações para o GitHub, dando o pull. 
+            Pronto, criei fiz tudo isso, beleza. Só que meu colega que entrou pela Branch teste2, também alterou o mesmo arquivo que eu, deu o commit e enviou para o GitHub. Ao entrar no GitHub e tentar dar o Pull Request, para enviar para nossa Branch principal, ocorre um erro, e ele nçao consegue. Mas eu que fiz antes, consegui dar o Pull Request.<br>
+            Agora vamos entender, porque não apareceu para o meu outro colega minha modificações enquanto ele também modificava? Porque cada um estava numa Branch, mas nossas duas Branchs estavam conectadas na Branch principal.
+            Sempre quando formos resolver um conflito, é importante que todas as nossas branchs estejam atualizadas ou todas as branchs envolvidas.<br>
+
+            Então, se o problema que deu foi na minha main e teste2, eu preciso atualiza-las na minha máquina, para isso eu dou o comando: git pull tanto para o teste2 quanto para a main.
+            Então primeiro o: <strong>git pull</strong> e depois o <strong>git checkout</strong>.Agora vamos analisar qual Branch deu erro, foi a teste2, então eu devo dar um: <strong>git checkout teste2</strong>  e logo em seguida o comando: <strong>git merge main</strong>
+            Esse comando fará com que todas as minhsa alterações feitas no teste2 se juntem na minha branch principal, main
+            Depois precisaremos abrir o Source Control, e lá estará o nosso teste2 e ao clicar conseguirei ver a alteração que foi feita pelo teste1 e a minha alteração. Então eu tenho a opção de escolher qual eu quero que fique, ou então juntar as duas versões. E depois eu faço o commit e dou um push na minha branch. E ao acessar o GitHub, aquela Pull Request volta a ser verdinha e eu posso por fim dar um puul request no teste2.
         </p>
 
         <img class="icone" src="icone.png" alt="icone">
