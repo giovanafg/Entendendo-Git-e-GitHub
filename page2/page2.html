@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos sobre Git-GitHub</title>
+    <link rel="stylesheet" href="page2.css">
+</head>
+<body>
+    <img class="principal" src="2.jpg" alt="">
+    
+    <div class="page2">
+
+        <h1 class="titulo">Criando repositório e commits</h1>
+
+        <h2 class="subtitulo">Primeira etapa - Criando primeiro arquivo</h2>
+        <p class="texto">
+            Criar um arquivo no computador, e abrir no VsCode. 
+            Depois, quando já estiver no VsCode, criar um arquivo chamado - readme.md.
+            Nesse arquivo podemos escrever algo como: Olá, esse projeto ensina você a usar o Git. E logo em seguida podemos dar um Ctrl + S
+        </p>
+
+        <h2 class="subtitulo">Segunda etapa - Fazendo o push e commit</h2>
+        <p class="texto">
+            Agora precisamos abrir o terminal, que pode ser do VsCode mesmo.Assim que abrir nós precisamos dar o comando: <strong>git init</strong>
+            Esse comando serve para: quando criamos um novo repositório do Git.O segundo comando será o: <strong>add</strong> 
+            Ele serve para: <strong>adicionar uma alteração no diretório ativo à área de staging.</strong>
+            Além de escrever o comando: git add, eu preciso inidicar qual arquivo que quero empurrar para um commit. Então nesse caso devemos dar o seguinte comando: <strong>git add readme.md</strong>. <br>
+            E para ter certeza de que deu certo o que acabamos de fazer, podemos dar o seguinte comando, para aparecer as alterações feitas: <strong>git status</strong>
+            E para conseguirmos fazer o commit, precisamos do comando: <strong>git commit -m “nome do nosso commit”</strong>
+        </p>
+
+        <h2 class="subtitulo">Terceira etapa - Criar repositório no GitHub</h2>
+        <p class="texto">
+            Agora chegou a hora de colocar tudo o que criamos na nossa máquina e alocar no GitHub.
+            Para isso precisamos criar um novo repositório, podemos chamar de ProjetoGit, e dar uma descrição e também deixar ele público e dar um enter
+        </p>
+
+        <h2 class="subtitulo">Quarta etapa - Git remote</h2>
+        <p class="texto">
+            Para conseguir fazer a conexão do nosso código local para o GitHub, precisamos fazer o seguinte comando: <strong>git remote add origin < link.git ></strong>
+            Esse link nós pegaremos lá no repositório que tínhamos criado anteriormente.<br>
+            E para dar um push, um empurrão do nosso repositóio para o GitHub, precisamos dar o seguinte comando: <strong>git push -m origin main</strong>
+            Quando dermos um <strong>enter</strong> e quando entrarmos no GitHub, o nosso primeiro commit já estará lá no nosso repositório do GitHub, naquele que anteriormente criamos.
+        </p>
+
+        <h2 class="subtitulo">Quinta etapa - Alterando e cirando novo arquivo VsCode</h2>
+        <p class="texto">
+            Para vermos como fica uma alteração que fazemos em algum arquivo, podemos apagar a priemeira frase que escrevemos no arquivo: <strong>readme.md</strong> e colocarmos uma outra frase.
+            E para fazermos um outro commit, podemos criar um outro arquivo, isso tudo no VsCode, chamado de: <strong>teste.md</strong> e lá escrevemos também uma frase.
+        </p>
+
+        <h2 class="subtitulo">Sexta etapa - Salvando e enviando novo commit para no repositório GitHub</h2>
+        <p class="texto">
+            Antes de qualquer coisa precisamos salvar todas as alterações feitas e arquivos criado, para isso usamos o comando: <strong>git add .</strong>
+            Logo em seguida iremos escrever a frase do nosso commit, com o comando: <strong>git commit -m “aqui escrevemos a mensagem”</strong>
+            E por fim, para conseguirmos enviar todas essas alterações para o nosso repositório no GitHub, é só darmos o comando: <strong>git push origin main</strong>
+            E quando dermos o refresh no GitHub, já estará lá o nosso novo commit
+        </p>
+
+        <h2 class="subtitulo">Sétima etapa - Como criar uma Branch</h2>
+        <p class="texto">
+            Quando precisamos adcicionar uma nova funcionalidade para o nosso arquivo, como por exemplo, um novo botão, podemos criar uma Branch, e para isso precisamos abrir nosso terminal e colocar o sguinte comando: <strong>git checkout -b “novo-botao”</strong>
+            O que acabamos de fazer foi, sair do arquivo que estávamos antes, e ao mesmo tempo criamos uma nova branch.
+            Depois disso criamos um novo arquivo para o nosso botão, como: <strong>botao.md</strong>
+            E agora faremos praticamente a mesa coisa que fizemos antes.Primeiro o comando: <strong>git add .</strong> .Segundo comando: <strong>git commit -m “novo-botao”</strong>.E o último comando é: <strong>git push origin novo-botao</strong>
+            Porque agora colocamos <strong>novo-botao</strong> ao invés de <strong>main</strong> ? Porque como fizemos anteriormente, ao mesmo tempo que criamos essa nova branch, saímos do arquivo que estávamos e então ficamos nesse novo que criamos: <strong>novo-botao</strong>
+        </p>
+
+        <h2 class="subtitulo">Oitava etapa - Git Merge</h2>
+        <p class="texto">
+            Bom, vamos dizer que já finalizei aquele botão e agora quero manter ele na minha Branch principal, que é o  tal do Merge, então para isso preciso dar o comando: <strong>git checkout main</strong>
+            para poder voltar para o meu arquivo principal e assim eu dou o comando: <strong>git merge novo-botao</strong> e depois: <strong>git push origin main</strong>
+            E quando dermos um refresh no nosso repositório do GitHUb, o nosso botão aparecerá na nossa Branch principal
+        </p>
+        
+        <img class="icone" src="icone.png" alt="icone">
+    </div>
+            
+</body>
+</html>

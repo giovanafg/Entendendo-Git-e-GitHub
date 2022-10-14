@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos sobre Git-GitHub</title>
+    <link rel="stylesheet" href="page4.css">
+</head>
+<body>
+    <img class="principal" src="imagem.jpg" alt="">
+    
+    <div class="page4">
+
+        <h1 class="titulo">Git Ignore</h1>
+
+        <h2 class="subtitulo">Qual a funcionalidade do Git Ignore?</h2>
+        <p class="texto">
+            Pensemos da seguinte forma, estou criando um projeto, e preciso ficar fazendo alguns testes semanais, mas eu não quero subir esses testes para o GitHub. Sendo assim, temos a possibilidade de “ignorar” arquivos que não queremos subir.
+            Para isso criamos uma pasta, no nosso editor como por exemplo o: VsCode, e damos o seguite nome para o arquivo: <strong>.gitignore</strong>
+            Depois de ter feito isso, nós podemos dar um: <strong>git status</strong> no terminal e ver que o nosso arquivo <strong>.gitignore</strong> já foi criado. <br>
+            Agora todos aqueles arquivos que não queremos subir para o GitHub, iremos colocar no arquivo <strong>.gitignore</strong>
+            Mas como iremos colocar? <br>Tem várias formas bem simples, uma delas é colocar o nome e uma / no final: <strong>NomeDoArquivo/</strong> , outra forma é colocar: <strong>.nomeFinalDoArquivo</strong>
+            Depois que fizermos isso e dermos um commit e push, quando entrarmos no GitHub, iremos notar nosso arquivo .gitignore lá, e o arquivo que colocamos dentro do .gitignore já não será mais visível.
+        </p>
+
+        <img class="icone" src="icone.png" alt="icone">
+
+    </div>
+
+</body>
+</html>

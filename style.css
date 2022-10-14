@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
+
+
+
+* {
+    margin: 0;
+    border: 0;
+    
+}
+
+body {
+    background: #000000;
+
+}
+
+.caixa {
+text-align: center;   
+ 
+}
+
+.github {
+    width: 100%;
+}
+
+
+nav {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    padding-top: 16px;
+    position: absolute;
+    top: 200px;
+    padding: 0 10%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+    
+}
+
+.subtitulo {
+    color: #868686;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    font-weight: 400;
+    padding-top: 16px;
+    position: absolute;
+    color: rgb(255, 255, 255);
+}
+
+.assunto-principal {
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-weight: bold;
+    text-align: center;
+    font-size: 38px;
+    font-style: normal;
+    padding-top: 58px;
+    padding-bottom: 58px;
+}
+
+
+
+.itens-estudo {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 160px;
+}
+
+.itens-estudo li {
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+    vertical-align: top;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-color: #993399;
+    border-width: 2px;
+    border-radius: 8px;
+    border-style: solid;   
+    
+}
+
+.itens-estudo li:hover {
+    width: 45%;
+    border-color: #993399;
+    border-width: 3px;
+       
+}
+
+.itens-estudo:active {
+    border-color: rgb(218, 144, 8);
+}
+
+
+
+.itens-estudo2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 160px;
+}
+
+.itens-estudo2 li {
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+    vertical-align: top;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-color: #993399;
+    border-width: 2px;
+    border-radius: 8px;
+    border-style: solid;   
+    
+}
+
+.itens-estudo2 li:hover {
+   width: 45%;
+   border-color: #993399;
+   border-width: 3px;
+    
+    
+}
+
+.itens-estudo2:active {
+    border-color: rgb(218, 144, 8);
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: #868686;
+
+}
+
+a:hover{
+    text-decoration: none;
+    color: #993399;
+
+}
+
+
+.itens-estudo h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 18px;
+}
+
+.itens-estudo2 h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 18px;
+}
+
+.descricao {
+    font-size: 18px;
+    padding-top: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #868686;
+
+}
+
+
+.footer {
+    background: rgb(9, 128, 120);
+    display: flex;
+    margin-top: 1000px;
+    position: absolute;
+    width: 100%;
+    height: 486px;
+    top: 1500px;
+
+}
+
